@@ -1,17 +1,348 @@
-* {
+html{
+    box-sizing: border-box;  /*прописывается для нормализации разрешения. Уменьшается сам контейнер, а не их содержимое*/
+}
+
+*,
+*::before, /*до и после*/
+::after {
+    box-sizing: inherit; /*размер контейнера унаследуют от корневого*/
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;   /*Убераем все отступы для текаста и заголовков*/
+}
+
+a { /*Изначально ссылки строчные и им нельзя задать размеры (width и height) и фоновую картинку*/
+    display: inline-block; /*преобразование ссылки в строчно-блочный тип*/
+    color: inherit;
+    text-decoration: none; /*убрать подчеркнутость*/
+}
+
+img {
+    max-width: 100%; /*задаем максимальный размер картинки относительно родительского блока*/
+    display: block; 
+    object-fit: cover; /* настройка пропорций картинок. cover — картинка без нарушения пропорций заполнит всю доступную область, обрезая всё ненужное*/
+}
+
+body{
+    min-width: 320px; /*минимальное универсальное значение, которое не дает сжать сайт меньше 320px*/
+    word-break: normal; /*правило переноса текста. normal-значение по умолчанию, длинные слова или строки с неразрывным пробелом не переносятся, даже если выходят за границы родительского блока.*/
+    font-family:'OpenSans', sans-serif;
+}
+/*--------------------------global----------------------------*/
+
+.list-reset {  /*Обнуляем параметры списка*/
     margin: 0;
+    padding: 0;
+    list-style: none; /*уберает точки и подччеркивание у ссылок*/
+}
+.btn-reset { /*общее свойство для кнопок*/
+    padding: 0; 
+    border: none; /*убмрает рамку кнопки*/
+    background-color: transparent; /*Убирает фон у кнопки*/
+    Cursor: pointer; /*делает курсор при наведении в виде пальца*/
+}
+/*--------------------------header----------------------------*/
+
+.header-bg { /*Класс для всего хедера*/
+    border-bottom: 1px solid #C4C4C4; /*линиия подчеркивающая весь блок*/
+    width: 1540px;
+    height: 110px;
+}
+.header-wrapper {
+    display: flex; /*свойство помогающе позиционировать*/
+    justify-content: space-between; /*расположить контен по центру блока по горизонтали*/
+    align-items: center;/*расположить контен по центру блока по вертикали*/
+    max-width:  1170px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+.logo-link {
+    margin-right: 50px; 
+}
+.header-list {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-list-link {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1C1C1C;
+}
+.header-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #3172B9;
+    border-radius: 3px;
+}
+/*-----------------------section with button--------------------*/
+.articles-section-btn {
+    width: 1540px;
+    height: 550px;
+    background-image: url(./images/Frontimg.svg)
 }
 
-body {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
+.article-div-btn {
+    padding-top: 113px;
+    padding-left: 185px;
+}
+
+.article-btn-title {
+
+    max-width: 529px;
+    max-height: 104px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 52px;
+    color: #1C1C1C;
+}
+
+.article-btn-text {
+    max-width: 471px;
+    max-height: 50px;
+    font-size: 16px;
     font-weight: 400;
-    font-style: normal;
-    font-variation-settings:"wdth" 100;
-    background-color: #FFFFFF;
-
+    line-height: 24.8px;
+    color:#787878;
+    margin: 26px 0px 0px 0px;   
 }
-h1 {
+
+.articlr-button{
+    width: 250px;
+    height: 58px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #3172B9;
+    border-radius: 3px;
+    line-height: 20.43px;
+    margin: 34px 0px 0px 0px;
+}
+
+/* .article-btn-img-protection {
+width: 14px;
+height: 17px;
+display: flex;
+margin: 14px 1145px 134px 40px;
+} */
+
+.article-btn-protection {
+    display: flex;
+    margin: 14px 1145px 134px 40px;
+    font-size: 11px;
+    font-weight: 400;
+    color:#787878;
+}
+
+/*-----------------------section-service--------------------*/
+
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    padding-top: 87px;
+    padding-bottom: 160px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.services-title {
+    max-width: 1170px;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 46.8px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #1C1C1C;
+}
+
+.services-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    color: #787878;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 21px;
+}
+
+.services-card-wrapper{
+    margin-top: 54px;
+    display: flex;
+    gap: 30px;
+    max-width: 1170px;
+    
+}
+
+.services-card-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 270px;
+    height: 320px;
+    border: 1px solid #E4E4E4;
+}
+
+.services-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #1C1C1C;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services-card-text{
+    display: inline-block;
+    text-align: center;
+    margin: 15px 30px 62px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #787878;
+}
+/*-----------------------section-articles--------------------*/
+
+.articles-section {
+    padding-top: 90px;
+    padding-bottom: 160px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.articles-title {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 46.8px;
+}
+
+.article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.article-card-wrapper{
+    display: flex;
+    max-width: 570px;
+    max-height: 180px;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+}
+
+.article-card-content-wrapper{
+    padding: 30px 160px 30px 30px; 
+}
+
+.article-card-time{
+    font-size: 10px;
+    font-weight: 400;
+    color: #787878; 
+}
+
+.article-card-title{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #1C1C1C;
+}
+
+.article-card-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #787878;
+}
+
+/*-----------------------section-clients--------------------*/
+
+.clients-section {
+    padding-top: 90px;
+    padding-bottom: 160px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.clients-title {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 46.8px;
+}
+
+.clients-wrapper {
+    display: flex;
+    gap: 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.clients-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 362px;
+    border: 1px solid #6B6B6B;
+    border-radius: 5px;
+}
+
+.clients-card-text {
+    max-width: 281px;
+    max-height: 150px;
+    margin: 0 auto;
+    padding-top: 51px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: #787878;
+}
+
+.cleents-part-wrapper {
+    max-width: 214px;
+    max-height: 67px;
+    margin: 113px 114px 32px 42px;
+    display: flex;
+}
+
+.Clients-card-img {
+    width: 67px;
+    height: 67px;
+    border-radius: 67px;
+    border: 2px solid #3172B9;
+    /* margin: 113px 114px 32px 42px; */
+}
+
+.clients-card-title {
+    max-width: 1170px;
+    /* margin: 0 auto; */
+    padding-bottom: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30.6px;
+}
+
+.clients-card-post {
+    max-width: 1170px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30.6px;
+}
+
+/*-----------------------section-contact--------------------*/
+
+/* h1 {
   color: #1C1C1C;
   font-size: 40px; 
   font-weight: 300;
@@ -59,4 +390,4 @@ body {
 
 
 
-  
+   */

@@ -12,132 +12,163 @@
 <body>
     <header class="header-bg"> <!--шапка сайта-->
         <div class="header-wrapper"> <!--блок контейнер-->
-            <a href="https://www.figma.com/design/"> <!--ссылка для логотипа-->
-                <img src="./images/logo.svg" alt="Лого сайта леоник"> <!--Изображение лого-->
+            <a class="logo-link" href="https://www.figma.com/design/"> <!--ссылка для логотипа-->
+            <img src="./images/logo.svg" alt="Лого сайта леоник"> <!--Изображение лого-->
             </a>
-            <nav> <!--Семантический блок для навигации-->
-                <ul> <!--Не нумерованный список-->
-                    <li>
-                        <a href="#">Home</a> <!--Ссылка внутри навигации-->
+            <nav class="header-nav"> <!--Семантический блок для навигации-->
+                <ul class="header-list list-reset"> <!--Не нумерованный список-->
+                    <li class="header-list-element">
+                        <a class="header-list-link" href="#">Home</a> <!--Ссылка внутри навигации-->
                     </li>
-                    <li>
-                        <a href="#">Services</a> <!--Ссылка внутри навигации-->
+                    <li class="header-list-element">
+                        <a class="header-list-link" href="#">Services</a> <!--Ссылка внутри навигации-->
                     </li>
-                    <li>
-                        <a href="#">Articles</a> <!--Ссылка внутри навигации-->
+                    <li class="header-list-element">
+                        <a class="header-list-link" href="#">Articles</a> <!--Ссылка внутри навигации-->
                     </li>
-                    <li>
-                        <a href="#">Clients</a> <!--Ссылка внутри навигации-->
+                    <li class="header-list-element">
+                        <a class="header-list-link" href="#">Clients</a> <!--Ссылка внутри навигации-->
                     </li>
-                    <li>
-                        <a href="#">Contacts</a> <!--Ссылка внутри навигации-->
+                    <li class="header-list-element">
+                        <a class="header-list-link" href="#">Contacts</a> <!--Ссылка внутри навигации-->
                     </li>
-                    <li>
-                        <a href="#">Join us</a> <!--Ссылка внутри навигации-->
+                    <li class="header-list-element">
+                        <a class="header-list-link" href="#">Join us</a> <!--Ссылка внутри навигации-->
                     </li>
                 </ul>
             </nav>
-            <button class="header-button">FREE TRIAL</button> <!--Кнопка-->
+            <button class="header-btn btn-reset">FREE TRIAL</button> <!--Кнопка-->
         </div>
     </header>
     <main>
-        <section>
-            <article class="article-button">
-                <h1>This is simply a smarter way to make your legal online</h1> <!--Заголовок-->
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p> <!--текст-->
-                <button>FREE 30 DAY TRIAL</button> <!--Кнопка-->  
-                <p><img src="./images/sayfety.svg" alt="Логитип безопсаности сайта"> SSL SECURED CONNECTION</p><!--Картинка с текстом-->
+        <section class="articles-section-btn">
+            <article class="article-btn">
+                <div class="article-div-btn">
+                    <h1 class="article-btn-title">This is simply a smarter way to make your legal online</h1> <!--Заголовок-->
+                    <p class="article-btn-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p> <!--текст-->
+                    <button class="btn-reset articlr-button">FREE 30 DAY TRIAL</button> <!--Кнопка-->  
+                    <p class="article-btn-protection"> <img src="./images/sayfety.svg" alt="Логитип безопсаности сайта"> SSL SECURED CONNECTION</p><!--Картинка с текстом-->
+                </div>
             </article>
         </section>   
-        <section>
-            <article>
-                <h2>Services</h2> <!--Подзаголовок 2-->
-                <p>Lionic guides you on making decisions for all aspects of your end-of-life plans.</p>
-            </article>
-            <article>
-                <img src="./images/Infiniti1.svg" alt="Знак бесконечности">
-                <h3>Your Legacy</h3> <!--Указание преимуства 1-->
-                <P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</P>
-            </article>
-            <article>
-                <Img src="./images/Hels2.svg" alt="Сердечко с пульсом">
-                <h3>Your Health</h3> <!--Указание преимуства 2-->
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-            </article>
-            <article>
-                <Img src="./images/Hels3.svg" alt="Мониторинг здоровья">
-                <h3>Funeral & Memorial</h3> <!--Указание преимуства 3-->
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-            </article>
-            <article>
-                <img src="./images/Money4.svg" alt="Значек решения ваших проблем с деньгами">
-                <h3>Legal & Financial</h3> <!--Указание преимуства 4 -->
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-            </article>
+        <section class="services-section">
+            <h2 class="services-title">Services</h2> <!--Подзаголовок 2-->
+            <p class="services-text">Lionic guides you on making decisions for all aspects of your end-of-life plans.</p>
+            <div class="services-card-wrapper">
+                <article class="services-card-article">
+                    <img src="./images/Infiniti1.svg" width="68px" height="66" alt="Знак бесконечности">
+                    <div class="services-card-content-wrapper">
+                        <h3 class="services-card-title">Your Legacy</h3> <!--Указание преимуства 1-->
+                        <P class="services-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</P>
+                    </div> 
+                </article>
+                <article class="services-card-article">
+                    <Img src="./images/Hels2.svg" width="86px" height="64" alt="Сердечко с пульсом">
+                    <div class="services-card-content-wrapper">    
+                        <h3 class="services-card-title">Your Health</h3> <!--Указание преимуства 2-->
+                        <p class="services-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+                    </div>
+                </article>
+                <article class="services-card-article">
+                    <Img src="./images/Hels3.svg" width="64px" height="64" alt="Мониторинг здоровья">
+                    <div class="services-card-content-wrapper">    
+                        <h3 class="services-card-title">Funeral & Memorial</h3> <!--Указание преимуства 3-->
+                        <p class="services-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+                    </div>
+                </article>
+                <article class="services-card-article">
+                <img src="./images/Money4.svg" width="65px" height="65" alt="Значек решения ваших проблем с деньгами">
+                    <div class="services-card-content-wrapper">   
+                        <h3 class="services-card-title">Legal & Financial</h3> <!--Указание преимуства 4 -->
+                        <p class="services-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+                    </div>
+                </article>
+            </div>
         </section>
-        <section>
-                <h2>Articles</h2>
-            <article>
-                <img src="./images/Jurisdiction1.svg" alt="Юрисдикция">
-                <p>15 Nov 2021</p>
-                <h3>Jurisdiction</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-            </article>
-            <article>
-                <img src="./images/Rightandobligation2.svg" alt="Права и отвественность">
-                <p>29 Nov 2021</p>
-                <h3>Rights and obligations</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-            </article>
-            <article>
-                <img src="./images/Consalting3.svg" alt="Сопровождение">
-                <p>28 Nov 2021</p>
-                <h3>Consulting</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-            </article>
-            <article>
-                <img src="./images/Contractors4.svg" alt="Строительство">
-                <p>11 Dec 2021</p>
-                <h3>Contractors</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-            </article>
+        <section class="articles-section">
+            <h2 class="articles-title">Articles</h2>
+            <div class="article-wrapper">
+                <article class="article-card-wrapper">
+                    <img src="./images/Jurisdiction1.svg" alt="Юрисдикция">
+                    <div class="article-card-content-wrapper">
+                        <time class="article-card-time" datetime="2021-11-15"> 15 Nov 2021</time>
+                        <h3 class="article-card-title">Jurisdiction</h3>
+                        <p class="article-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+                    </div>
+                </article>
+                <article class="article-card-wrapper">
+                    <img src="./images/Rightandobligation2.svg" alt="Права и отвественность">
+                    <div class="article-card-content-wrapper">
+                        <time class="article-card-time" datetime="2021-11-29">29 Nov 2021</time>
+                        <h3 class="article-card-title">Rights and obligations</h3>
+                        <p class="article-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+                    </div>
+                </article>
+                <article class="article-card-wrapper">
+                    <img src="./images/Consalting3.svg" alt="Сопровождение">
+                    <div class="article-card-content-wrapper">
+                        <time class="article-card-time" datetime="2021-11-28">28 Nov 2021</time>
+                        <h3 class="article-card-title">Consulting</h3>
+                        <p class="article-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+                    </div>
+                </article>
+                <article class="article-card-wrapper">
+                    <img src="./images/Contractors4.svg" alt="Строительство">
+                    <div class="article-card-content-wrapper">
+                        <time class="article-card-time" datetime="2021-12-11">11 Dec 2021</time>
+                        <h3 class="article-card-title">Contractors</h3>
+                        <p class="article-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+                    </div>
+                </article>
+            </div>
         </section>
-        <section>
-                <h2>Clients</h2>
-            <article>
-                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
-                <img src="./images/JohanAmstrong.svg" alt="Фото Джо Армстронга" >
-                <h3>John Armstrong</h3> <p>Customer</p>
-            </article>
-            <article>
-                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
-                <img src="./images/ElizabetMartin.svg" alt="Фото Элизабет Мартин" >
-                <h3>Elizabeth Martin</h3> <p>Customer</p>
-            </article>
-            <article>
-                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
-                <img src="./images/RobinSoutby.svg" alt="Фото Робина Саутби"
-                <h3>Robin Soutby</h3> <P>Customer</P>
-            </article>
+        <section class="clients-section">
+            <h2 class="clients-title">Clients</h2>
+            <div class="clients-wrapper">
+                <article class="clients-card-wrapper">
+                    <p class="clients-card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
+                    <div class="cleents-part-wrapper">
+                    <img class="Clients-card-img" src="./images/JohanAmstrong.svg" alt="Фото Джо Армстронга" >
+                    <div class="cleents-part-wrapper">
+                        <h3 class="clients-card-title">John Armstrong</h3>
+                        <p class="clients-card-post">Customer</p>
+                    </div>
+                </article>
+                <article class="clients-card-wrapper">
+                    <p class="clients-card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
+                    <img class="Clients-card-img" src="./images/ElizabetMartin.svg" alt="Фото Элизабет Мартин" >
+                    <h3 class="clients-card-title">Elizabeth Martin</h3> <p class="clients-card-post">Customer</p>
+                </article>
+                <article class="clients-card-wrapper">
+                    <p class="clients-card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
+                    <img class="Clients-card-img" src="./images/RobinSoutby.svg" alt="Фото Робина Саутби" >
+                    <h3 class="clients-card-title">Robin Soutby</h3> <P class="clients-card-post">Customer</P>
+                </article>
+            </div>
         </section>
-        <section>
-                <h2>Contacts</h2>
-            <article>
+        <section class="contact-section">
+            <h2 class="contact-title">Contacts</h2>
+            <article class="contact-article">
                 <img src="./images/location.svg" alt="Место нахождение">
-                <h3>Visit Us</h3>
-                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
+                <div class="conantact-card-wrapper">
+                    <h3 class="contact-card-title">Visit Us</h3>
+                    <p class="contact-card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
+                </div>
             </article>
             <article>
                 <img src="./images/phone.svg" alt="Телефон">
-                <h3>Call Us</h3>
-                <p>+7 (987) 654-32-10</p>
-                <p>+7 (123) 456-78-90</p>
+                <div class="conantact-card-wrapper">
+                    <h3 class="contact-card-title">Call Us</h3>
+                    <a href="tel:+79876543210">+7(987)654-32-10</a>
+                    <a href="tel:+71234567890">+7(123)456-78-90</a>
+                </div>            
             </article>
             <article>
                 <img src="./images/Mail.svg" alt="Почта">
-                <h3>Email Us</h3>
-                <p>example@example.com</p>
-                <p>support@example.com</p>
+                <div class="conantact-card-wrapper">
+                    <h3 class="contact-card-title">Email Us</h3>
+                    <p>example@example.com</p>
+                    <p>support@example.com</p>
             </article>
         </section> 
     </main>
