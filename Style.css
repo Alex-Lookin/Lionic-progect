@@ -37,17 +37,18 @@ body{
     list-style: none; /*уберает точки и подччеркивание у ссылок*/
 }
 .btn-reset { /*общее свойство для кнопок*/
-    padding: 0; 
-    border: none; /*убмрает рамку кнопки*/
-    background-color: transparent; /*Убирает фон у кнопки*/
-    Cursor: pointer; /*делает курсор при наведении в виде пальца*/
-}
+        padding: 0; 
+        border: none; /*убмрает рамку кнопки*/
+        background-color: transparent; /*Убирает фон у кнопки*/
+        Cursor: pointer; /*делает курсор при наведении в виде пальца*/
+    }
 /*--------------------------header----------------------------*/
 
 .header-bg { /*Класс для всего хедера*/
     border-bottom: 1px solid #C4C4C4; /*линиия подчеркивающая весь блок*/
-    width: 1540px;
-    height: 110px;
+    max-width: 1540px;
+    max-height: 110px;
+    margin: 0 auto;
 }
 .header-wrapper {
     display: flex; /*свойство помогающе позиционировать*/
@@ -81,8 +82,9 @@ body{
 }
 /*-----------------------section with button--------------------*/
 .articles-section-btn {
-    width: 1540px;
-    height: 550px;
+    max-width: 1540px;
+    max-height: 550px;
+    margin: 0 auto;
     background-image: url(./images/Frontimg.svg)
 }
 
@@ -106,7 +108,7 @@ body{
     max-height: 50px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24.8px;
+    line-height: 25px;
     color:#787878;
     margin: 26px 0px 0px 0px;   
 }
@@ -119,7 +121,7 @@ body{
     color: #FFFFFF;
     background-color: #3172B9;
     border-radius: 3px;
-    line-height: 20.43px;
+    line-height: 21px;
     margin: 34px 0px 0px 0px;
 }
 
@@ -130,9 +132,15 @@ display: flex;
 margin: 14px 1145px 134px 40px;
 } */
 
-.article-btn-protection {
+.article-btn-protection-wrapper{
     display: flex;
-    margin: 14px 1145px 134px 40px;
+    gap: 13px;
+    margin-top: 14px;
+    margin-left: 40px;
+
+}
+
+.article-btn-protection {
     font-size: 11px;
     font-weight: 400;
     color:#787878;
@@ -141,61 +149,66 @@ margin: 14px 1145px 134px 40px;
 /*-----------------------section-service--------------------*/
 
 .services-section {
+    max-width: 1170px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
     padding-top: 87px;
     padding-bottom: 160px;
-    border-bottom: 1px solid #DADADA;
+    margin: 0 auto;
+}
+.services-title-wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .services-title {
-    max-width: 1170px;
-    margin: 0 auto;
     font-size: 36px;
     font-weight: 300;
-    line-height: 46.8px;
-    display: flex;
-    justify-content: space-evenly;
+    line-height: 47px;
     color: #1C1C1C;
 }
 
 .services-text {
+    padding-top: 20px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 21.79px;
+    line-height: 22px;
     color: #787878;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 21px;
 }
 
+/* шляпа----------------------------------------------*/
 .services-card-wrapper{
     margin-top: 54px;
     display: flex;
     gap: 30px;
-    max-width: 1170px;
-    
+    max-width: 1170px;   
 }
 
 .services-card-article {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    padding-top: 61px ;
     width: 270px;
     height: 320px;
     border: 1px solid #E4E4E4;
 }
 
+.services-card-content-wrapper{
+    padding-top: 27px;
+    display: flex;
+    flex-direction: column;
+}
+
 .services-card-title {
+    margin: 0 auto;
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
     color: #1C1C1C;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .services-card-text{
@@ -210,9 +223,13 @@ margin: 14px 1145px 134px 40px;
 /*-----------------------section-articles--------------------*/
 
 .articles-section {
+    max-width: 1540px;
     padding-top: 90px;
     padding-bottom: 160px;
     border-bottom: 1px solid #C4C4C4;
+    border-top: 1px solid #DADADA;
+    margin: 0 auto;
+
 }
 
 .articles-title {
@@ -271,6 +288,8 @@ margin: 14px 1145px 134px 40px;
     padding-top: 90px;
     padding-bottom: 160px;
     border-bottom: 1px solid #C4C4C4;
+    margin: 0 auto;
+    max-width: 1540px;
 }
 
 .clients-title {
@@ -279,7 +298,7 @@ margin: 14px 1145px 134px 40px;
     padding-bottom: 40px;
     font-size: 36px;
     font-weight: 300;
-    line-height: 46.8px;
+    line-height: 47px;
 }
 
 .clients-wrapper {
@@ -300,20 +319,22 @@ margin: 14px 1145px 134px 40px;
 
 .clients-card-text {
     max-width: 281px;
-    max-height: 150px;
     margin: 0 auto;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #DADADA;
     padding-top: 51px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 25.2px;
+    line-height: 25px;
     color: #787878;
 }
 
 .cleents-part-wrapper {
-    max-width: 214px;
     max-height: 67px;
-    margin: 113px 114px 32px 42px;
+    padding-top: 28px;
+    padding-left: 42px;
     display: flex;
+    gap: 17px;
 }
 
 .Clients-card-img {
@@ -321,27 +342,137 @@ margin: 14px 1145px 134px 40px;
     height: 67px;
     border-radius: 67px;
     border: 2px solid #3172B9;
-    /* margin: 113px 114px 32px 42px; */
 }
+
+.cleents-part-card-wrapper{
+display: flex;
+flex-direction: column;
+}
+
 
 .clients-card-title {
     max-width: 1170px;
-    /* margin: 0 auto; */
-    padding-bottom: 40px;
     font-size: 17px;
     font-weight: 600;
-    line-height: 30.6px;
+    line-height: 31px;
 }
 
 .clients-card-post {
     max-width: 1170px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 30.6px;
+    line-height: 31px;
+    color: #787878;
 }
 
 /*-----------------------section-contact--------------------*/
 
+.contact-section{
+    max-width: 1540px;
+    margin: 0 auto;
+    padding-top: 87px;
+    padding-bottom: 160px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.contact-title{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 47px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 109px;
+}
+
+.contact-wrapper{
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.contact-article{
+    max-width: 214px;
+    max-height: 159px; 
+}
+
+.contact-card-title{
+    padding-top: 19px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 31px;
+    color: #1C1C1C;
+}
+
+.contact-card-text{
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #787878;
+}
+
+.contact-card-telephone{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #787878;
+}
+
+.contact-indent{
+    padding-top: 30px;
+}
+
+.contact-card-mail{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #787878;
+}
+
+/*-----------------------section-footer--------------------*/
+
+
+.footer-wrapper{
+    padding-top: 45px;
+    display: flex;
+    max-width: 1540px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo-text{
+    padding-left: 25px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #787878;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 199px;
+    gap:29px;
+    align-items: center;
+}
+
+
+.footer-list-link{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #787878;
+
+}
+
+.footer-massege-wrapper{
+    padding-left: 26px;
+    display: flex;
+    gap: 32px;
+
+}
 /* h1 {
   color: #1C1C1C;
   font-size: 40px; 

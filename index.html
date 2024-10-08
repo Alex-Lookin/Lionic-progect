@@ -47,13 +47,19 @@
                     <h1 class="article-btn-title">This is simply a smarter way to make your legal online</h1> <!--Заголовок-->
                     <p class="article-btn-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p> <!--текст-->
                     <button class="btn-reset articlr-button">FREE 30 DAY TRIAL</button> <!--Кнопка-->  
-                    <p class="article-btn-protection"> <img src="./images/sayfety.svg" alt="Логитип безопсаности сайта"> SSL SECURED CONNECTION</p><!--Картинка с текстом-->
+                    <div class="article-btn-protection-wrapper">
+                        <img width="14px" height="17px" src="./images/sayfety.svg" alt="Логитип безопсаности сайта">
+                        <p class="article-btn-protection">SSL SECURED CONNECTION</p><!--Картинка с текстом-->
+                    </div>
+                </div>
                 </div>
             </article>
         </section>   
         <section class="services-section">
-            <h2 class="services-title">Services</h2> <!--Подзаголовок 2-->
-            <p class="services-text">Lionic guides you on making decisions for all aspects of your end-of-life plans.</p>
+            <div class="services-title-wrapper">
+                <h2 class="services-title">Services</h2> <!--Подзаголовок 2-->
+                <p class="services-text">Lionic guides you on making decisions for all aspects of your end-of-life plans.</p>
+            </div>
             <div class="services-card-wrapper">
                 <article class="services-card-article">
                     <img src="./images/Infiniti1.svg" width="68px" height="66" alt="Знак бесконечности">
@@ -97,18 +103,18 @@
                     </div>
                 </article>
                 <article class="article-card-wrapper">
-                    <img src="./images/Rightandobligation2.svg" alt="Права и отвественность">
-                    <div class="article-card-content-wrapper">
-                        <time class="article-card-time" datetime="2021-11-29">29 Nov 2021</time>
-                        <h3 class="article-card-title">Rights and obligations</h3>
-                        <p class="article-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
-                    </div>
-                </article>
-                <article class="article-card-wrapper">
                     <img src="./images/Consalting3.svg" alt="Сопровождение">
                     <div class="article-card-content-wrapper">
                         <time class="article-card-time" datetime="2021-11-28">28 Nov 2021</time>
                         <h3 class="article-card-title">Consulting</h3>
+                        <p class="article-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>    
+                    </div>
+                </article>
+                <article class="article-card-wrapper">
+                    <img src="./images/Rightandobligation2.svg" alt="Права и отвественность">
+                    <div class="article-card-content-wrapper">
+                        <time class="article-card-time" datetime="2021-11-29">29 Nov 2021</time>
+                        <h3 class="article-card-title">Rights and obligations</h3>
                         <p class="article-card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
                     </div>
                 </article>
@@ -129,76 +135,85 @@
                     <p class="clients-card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
                     <div class="cleents-part-wrapper">
                     <img class="Clients-card-img" src="./images/JohanAmstrong.svg" alt="Фото Джо Армстронга" >
-                    <div class="cleents-part-wrapper">
+                    <div class="cleents-part-card-wrapper">
                         <h3 class="clients-card-title">John Armstrong</h3>
                         <p class="clients-card-post">Customer</p>
                     </div>
                 </article>
                 <article class="clients-card-wrapper">
                     <p class="clients-card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
-                    <img class="Clients-card-img" src="./images/ElizabetMartin.svg" alt="Фото Элизабет Мартин" >
-                    <h3 class="clients-card-title">Elizabeth Martin</h3> <p class="clients-card-post">Customer</p>
-                </article>
+                    <div class="cleents-part-wrapper">
+                        <img class="Clients-card-img" src="./images/ElizabetMartin.svg" alt="Фото Элизабет Мартин" >
+                        <div class="cleents-part-card-wrapper">
+                            <h3 class="clients-card-title">Elizabeth Martin</h3>
+                            <p class="clients-card-post">Customer</p>
+                        </div>
+                    </div>
+                    </article>
                 <article class="clients-card-wrapper">
                     <p class="clients-card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
-                    <img class="Clients-card-img" src="./images/RobinSoutby.svg" alt="Фото Робина Саутби" >
-                    <h3 class="clients-card-title">Robin Soutby</h3> <P class="clients-card-post">Customer</P>
+                    <div class="cleents-part-wrapper">
+                        <img class="Clients-card-img" src="./images/RobinSoutby.svg" alt="Фото Робина Саутби" >
+                        <div class="cleents-part-card-wrapper">
+                            <h3 class="clients-card-title">Robin Soutby</h3> 
+                            <P class="clients-card-post">Customer</P>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
         <section class="contact-section">
             <h2 class="contact-title">Contacts</h2>
-            <article class="contact-article">
-                <img src="./images/location.svg" alt="Место нахождение">
-                <div class="conantact-card-wrapper">
+            <div class="contact-wrapper">
+                <article class="contact-article">
+                    <img src="./images/location.svg" width="29px" height="29px" alt="Место нахождение">
                     <h3 class="contact-card-title">Visit Us</h3>
                     <p class="contact-card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
-                </div>
             </article>
-            <article>
-                <img src="./images/phone.svg" alt="Телефон">
-                <div class="conantact-card-wrapper">
+            <article class="contact-article">
+                <img src="./images/phone.svg" width="29px" height="29px" alt="Телефон">
                     <h3 class="contact-card-title">Call Us</h3>
-                    <a href="tel:+79876543210">+7(987)654-32-10</a>
-                    <a href="tel:+71234567890">+7(123)456-78-90</a>
-                </div>            
+                    <a class="contact-card-telephone contact-indent" href="tel:+79876543210">+7(987)654-32-10</a>
+                    <a class="contact-card-telephone" href="tel:+71234567890">+7(123)456-78-90</a>       
             </article>
-            <article>
-                <img src="./images/Mail.svg" alt="Почта">
-                <div class="conantact-card-wrapper">
+            <article class="contact-article">
+                <img src="./images/Mail.svg" width="29px" height="29px" alt="Почта">
                     <h3 class="contact-card-title">Email Us</h3>
-                    <p>example@example.com</p>
-                    <p>support@example.com</p>
-            </article>
-        </section> 
+                    <p class="contact-card-mail contact-indent" >example@example.com</p>
+                    <p class="contact-card-mail">support@example.com</p>
+                </article>
+            </div>
+            </section> 
     </main>
-    <footer>
-                <a hrev="https://www.figma.com/design/"></a>
-                <img src="./images/logo.svg" alt="Лого"></a>
-                <P>Copyright ©2017. All Right Reserved</P>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">About Us </a>
+    <footer class="footer-wrapper">
+                <a class="footer-logo-link" hrev="https://www.figma.com/design/"></a>
+                <img src="./images/logo.svg" width="115px" height="44px" alt="Лого"></a>
+                <P class="footer-logo-text">Copyright ©2017. All Right Reserved</P>
+            <nav class="footer-nav">
+                <ul class="footer-list list-reset">
+                    <li class="footer-list-elements">
+                        <a class="footer-list-link" href="#">About Us </a>
                     </li>
-                    <li>
-                        <a href="#">Contact Us </a>
+                    <li class="footer-list-elements">
+                        <a class="footer-list-link" href="#">Contact Us </a>
                     </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
+                    <li class="footer-list-elements">
+                        <a class="footer-list-link" href="#">Privacy Policy</a>
                     </li>
-                    <li>
-                        <a href="#">Terms Condition</a>
+                    <li class="footer-list-elements">
+                        <a class="footer-list-link" href="#">Terms Condition</a>
                     </li>
-                    <li>
-                        <a href="#"><img src="./images/Tviter.svg" alt="Твитер"></a>
+                    <div class="footer-massege-wrapper">
+                    <li class="footer-list-elements">
+                        <a class="footer-list-link" href="#"><img src="./images/Tviter.svg" alt="Твитер"></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="./images/Sochial2.svg" alt="Соцсети"></a>
+                    <li class="footer-list-elements">
+                        <a class="footer-list-link" href="#"><img src="./images/Sochial2.svg" alt="Соцсети"></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="./images/MailCompany.svg" alt="Почта"></a>
+                    <li class="footer-list-elements">
+                        <a class="footer-list-link" href="#"><img src="./images/MailCompany.svg" alt="Почта"></a>
                     </li>
+                    </div>
                 </ul>
             </nav>
     </footer> <!--Подвал сайта-->
